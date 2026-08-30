@@ -1,0 +1,16 @@
+{
+  "name": "hey-me",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "HEY_CAPTURE_DRY_RUN=1 node --env-file=.env --watch bridge/server.mjs",
+    "capture": "node --env-file=.env bridge/server.mjs",
+    "start": "node --env-file=.env bridge/server.mjs",
+    "build": "node --check bridge/server.mjs && node --check public/app.js && node --check public/sw.js",
+    "test": "npm run build && node --test tests/*.test.mjs"
+  },
+  "type": "module"
+}
