@@ -2,7 +2,7 @@
 
 - Be simple and concise.
 - Use the active voice.
-- Do not use Markdown blockquotes in responses.
+- Use markdown code blocks (```) instead of Markdown blockquotes in responses.
 
 ## Git and GitHub
 
